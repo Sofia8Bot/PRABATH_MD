@@ -28,9 +28,9 @@ const maker = require('mumaker')
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "deepsea", alias: ["logo1"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "محيط", alias: ["logo1"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/create-3d-deep-sea-metal-text-effect-online-1053.html', text)
 
@@ -40,9 +40,9 @@ cmd({ pattern: "deepsea", alias: ["logo1"], category: "textpro", desc: "Some tex
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "horror", alias: ["logo2"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "رعب", alias: ["logo2"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/horror-blood-text-effect-online-883.html', text)
 
@@ -52,9 +52,9 @@ cmd({ pattern: "horror", alias: ["logo2"], category: "textpro", desc: "Some text
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "whitebear", alias: ["logo3"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "اسودوابيض", alias: ["logo3"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html', text)
 
@@ -64,9 +64,9 @@ cmd({ pattern: "whitebear", alias: ["logo3"], category: "textpro", desc: "Some t
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "joker", alias: ["logo4"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "جوكر", alias: ["logo4"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/create-logo-joker-online-934.html', text)
 
@@ -76,9 +76,9 @@ cmd({ pattern: "joker", alias: ["logo4"], category: "textpro", desc: "Some text 
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "metallic", alias: ["logo5"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "ميتاليك", alias: ["logo5"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/create-a-metallic-text-effect-free-online-1041.html', text)
 
@@ -88,9 +88,9 @@ cmd({ pattern: "metallic", alias: ["logo5"], category: "textpro", desc: "Some te
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "steel", alias: ["logo6"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "فولاذ", alias: ["logo6"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/steel-text-effect-online-921.html', text)
 
@@ -100,9 +100,9 @@ cmd({ pattern: "steel", alias: ["logo6"], category: "textpro", desc: "Some text 
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "harrypotter", alias: ["logo7"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "هاريبوتر", alias: ["logo7"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/create-harry-potter-text-effect-online-1025.html', text)
 
@@ -112,9 +112,9 @@ cmd({ pattern: "harrypotter", alias: ["logo7"], category: "textpro", desc: "Some
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "underwater", alias: ["logo8"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "مياه", alias: ["logo8"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/3d-underwater-text-effect-generator-online-1013.html', text)
 
@@ -124,9 +124,9 @@ cmd({ pattern: "underwater", alias: ["logo8"], category: "textpro", desc: "Some 
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "luxury", alias: ["logo9"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "ترف", alias: ["logo9"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/3d-luxury-gold-text-effect-online-1003.html', text)
 
@@ -136,9 +136,9 @@ cmd({ pattern: "luxury", alias: ["logo9"], category: "textpro", desc: "Some text
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "glue", alias: ["logo10"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "جلو", alias: ["logo10"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html', text)
 
@@ -148,9 +148,9 @@ cmd({ pattern: "glue", alias: ["logo10"], category: "textpro", desc: "Some text 
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "fabric", alias: ["logo11"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "فابريك", alias: ["logo11"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/fabric-text-effect-online-964.html', text)
 
@@ -160,9 +160,9 @@ cmd({ pattern: "fabric", alias: ["logo11"], category: "textpro", desc: "Some tex
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "toxic", alias: ["logo12"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "توكسيك", alias: ["logo12"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/toxic-text-effect-online-901.html', text)
 
@@ -172,9 +172,9 @@ cmd({ pattern: "toxic", alias: ["logo12"], category: "textpro", desc: "Some text
 
     //---------------------------------------------------------------------------
 
-cmd({ pattern: "ancient", alias: ["logo13"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
+cmd({ pattern: "قديم", alias: ["logo13"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
         let anu = await maker.textpro('https://textpro.me/3d-golden-ancient-text-effect-online-free-1060.html', text)
 
@@ -186,7 +186,7 @@ cmd({ pattern: "ancient", alias: ["logo13"], category: "textpro", desc: "Some te
 
 cmd({
 
-            pattern: "cloud",
+            pattern: "سحاب",
 
             alias: ["logo14"],
 
@@ -198,7 +198,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
             let anu = await maker.textpro('https://textpro.me/create-a-cloud-text-effect-on-the-sky-online-1004.html', text)
 
@@ -226,7 +226,7 @@ cmd({
 
 cmd({
 
-            pattern: "transformer",
+            pattern: "ترانسفورمر",
 
             alias: ["logo15"],
 
@@ -238,7 +238,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
 
             let anu = await maker.textpro('https://textpro.me/create-a-transformer-text-effect-online-1035.html', text)
 
