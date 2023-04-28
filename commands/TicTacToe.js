@@ -14,7 +14,7 @@
  const ty = eco.connect(mongodb);
 cmd(
   {
-    pattern: "delxo",
+    pattern: "حذف_اكس_او",
     desc: "deletes TicTacToe running session.",
     filename: __filename,
     category: "game",
@@ -25,7 +25,7 @@ cmd(
         const participants = citel.isGroup ? await groupMetadata.participants : "";
         const groupAdmins = await getAdmin(Void, citel)
         const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
-        if(!isAdmins && !isCreator) return citel.reply('This command is only for Group Admin and my owner.')
+        if(!isAdmins && !isCreator) return citel.reply('هذا الأمر مخصص فقط مشرفين المجموعة والمالك الخاص بي.')
          this.game = this.game ? this.game : false
          if (
         Object.values(this.game).find(
@@ -34,9 +34,9 @@ cmd(
         )
       ) {
         delete this.game
-        return citel.reply(`*Successfully Deleted running Xo game* ✅_`);
+        return citel.reply(`*تم الحذف بنجاح تشغيل لعبة Xo* ✅_`);
         } else {
-              return citel.reply(`*No Xo game is running* ❗`)
+              return citel.reply(`*لا توجد لعبة Xo قيد التشغيل* ❗`)
                     
         }
   })
@@ -86,8 +86,8 @@ cmd(
           }[v];
         });
         let str = `
-*දැන් තරග වදින්නේ:* 🙋‍♂️ @${room.game.currentTurn.split("@")[0]}
-*තරගකරුගේ ID අංකය:* 🆔 ${room.id}
+*تتنافس الآن:* 🙋‍♂️ @${room.game.currentTurn.split("@")[0]}
+*رقم هوية المتسابق:* 🆔 ${room.id}
 ${arr.slice(0, 3).join("  ")}
 ${arr.slice(3, 6).join("  ")}
 ${arr.slice(6).join("  ")}
