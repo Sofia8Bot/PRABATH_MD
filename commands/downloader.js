@@ -18,7 +18,7 @@ var videotime = 60000 // 10000min
 var dlsize = 350 // 350mb
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "tgs",
+            pattern: "استيكرتيليجرام",
             desc: "Downloads telegram stickers.",
             category: "downloader",
             filename: __filename,
@@ -30,7 +30,7 @@ function __lobz(){const H=['R53FWbciV9','reply','rbot_18407','\x5c(\x20*\x5c)','
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "tts",
+            pattern: "قول",
             react: "🔊",
             desc: "text to speech.",
             category: "downloader",
@@ -38,7 +38,7 @@ cmd({
             use: '<Hii,this is Secktor>',
         },
         async(Void, citel, text) => {
-            if (!text) return citel.reply('Please give me Sentence to change into audio.')
+            if (!text) return citel.reply('من فضلك أعطني جملة للتغيير إلى صوت.')
             let texttts = text
             citel.react("📢");
             const ttsurl = googleTTS.getAudioUrl(texttts, {
@@ -61,7 +61,7 @@ cmd({
     
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "ringtone",
+            pattern: "نغمه",
             desc: "Downloads ringtone.",
             category: "downloader",
             filename: __filename,
@@ -76,14 +76,14 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "pint",
+            pattern: "تلوين",
             desc: "Downloads image from pinterest.",
             category: "downloader",
             filename: __filename,
             use: '<text|image name>',
         },
         async(Void, citel, text) => {
-            if (!text) return reply("What picture are you looking for?") && Void.sendMessage(citel.chat, {
+            if (!text) return reply("ما الصورة التي تبحث عنها؟") && Void.sendMessage(citel.chat, {
                 react: {
                     text: '❌',
                     key: citel.key
@@ -93,9 +93,9 @@ cmd({
                 anu = await pinterest(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
                 let buttons = [{
-                        buttonId: `${prefix}pint ${text}`,
+                        buttonId: `${prefix}تلوين ${text}`,
                         buttonText: {
-                            displayText: 'Next Image ➡️'
+                            displayText: 'التالي ➡️'
                         },
                         type: 1
                     }
@@ -119,8 +119,8 @@ cmd({
         })
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "mediafire",
-            alias: ["mf","මීඩියාෆයර්","mfire"],
+            pattern: "ميديافاير",
+            alias: ["mf","حمل","mfire"],
             desc: "Downloads zip from Mediafire.",
             category: "downloader",
             react: "⬇️",
@@ -129,7 +129,7 @@ cmd({
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply(`Give link ${tlang().greet}`);
-            if (!isUrl(text.split(" ")[0]) && !text.split(" ")[0].includes("mediafire.com")) return reply(`The link you provided is invalid`);
+            if (!isUrl(text.split(" ")[0]) && !text.split(" ")[0].includes("mediafire.com")) return reply(`الرابط الذي قدمته غير صالح`);
             const baby1 = await mediafire(text);
             if (baby1[0].size.split("MB")[0] >= 999) return reply("*File Over Limit* " + util.format(baby1));
             const result4 = `*Mᴇᴅɪᴀғɪʀᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ*
@@ -147,7 +147,7 @@ cmd({
                 }, {
                     quoted: citel,
                 })
-                .catch((err) => reply("could not found anything"));
+                .catch((err) => reply("تعذر العثور على أي شيء"));
 
         }
     )
@@ -155,7 +155,7 @@ cmd({
    //-------------------------------------------------------------------------
 cmd({
             pattern: "yts",
-            alias: ["සොයන්න","yt"],
+            alias: ["يوتيوب","yt"],
             desc: "Gives descriptive info of query from youtube..",
             category: "downloader",
             filename: __filename,
@@ -164,7 +164,7 @@ cmd({
         async(Void, citel, text) => {
             let yts = require("secktor-pack");
             citel.reply("*Searching on YouTube* 🌎");
-            if (!text) return citel.reply(`*Enter the search word* ❗`);
+            if (!text) return citel.reply(`*أدخل كلمة البحث* ❗`);
             let search = await yts(text);
             let textt = "*YouTube Search*\n\n Result From " + text + "\n\n━━━━━━━━━━━━━━━━━━━━━━━\n";
 
@@ -176,11 +176,11 @@ cmd({
 
           i.type
 
-        }\n👀Views : ${i.views}\n🕑Duration : ${
+        }\n👀المشاهدات : ${i.views}\n🕑المده : ${
 
           i.timestamp
 
-        }\n⬆️Upload At : ${i.ago}\n💬Author : ${i.author.name}\n🎊Url : ${
+        }\n⬆️تحميل في : ${i.ago}\n💬كاتب : ${i.author.name}\n🎊Url : ${
 
           i.url
 
@@ -210,7 +210,7 @@ cmd({
 
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "song",
+        pattern: "بلاي",
         desc: "Downloads audio by yt link.",
         category: "downloader",
         react: "🎶",
@@ -227,18 +227,18 @@ cmd({
         };
 
         if (text.length === 0) {
-            reply(`❌ URL is empty! \nSend ${prefix}ytmp3 url`);
+            reply(`❌ عنوان URL فارغ! \nارسل ${prefix}بلاي اللينك`);
             return;
         }
         try {
             let urlYt = text;
             if (!urlYt.startsWith("")) {
-                citel.reply(`*Give Song Name!*❗`);
+                citel.reply(`*هات اسم الاغنيه!*❗`);
                 return;
             }
             let infoYt = await ytdl.getInfo(anu.url);
             //30 MIN
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`تم تجاوز الحد..*❗`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
             const stream = ytdl(anu.url, {
@@ -255,7 +255,7 @@ cmd({
             let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
             if (fileSizeInMegabytes <= dlsize) {
                 let yts = require("secktor-pack");
-            citel.reply(`🎵 ━━━━━━━━━━ *𝗔𝗨𝗗𝗜𝗢_𝗜𝗡𝗙𝗢* ━━━━━━━━━━ 🎵\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
+            citel.reply(`🎵 ━━━━━━━━━━ *معلومات الصوت* ━━━━━━━━━━ 🎵\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
                 let search = await yts(text);
             citel.react("✅");
                 let buttonMessage = {
@@ -263,12 +263,12 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'audio/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: `ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
+                        caption: `sᴏғɪᴀ_ʙᴏᴛ ⦁ ᴍᴀᴅᴇ ʙʏ sᴏғɪᴀ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
                         headerType: 4,
                     }
                     return Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
                 } else {
-                    citel.reply(`*The limit has been exceeded.*❗`);
+                    citel.reply(`*تم تجاوز الحد.*❗`);
                 }
 
                 fs.unlinkSync(`./${randomName}`);
@@ -284,7 +284,7 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
 
-        pattern: "video",
+        pattern: "فيديو",
 
         desc: "Downloads audio by yt link.",
 
@@ -312,7 +312,7 @@ cmd({
 
         if (text.length === 0) {
 
-            reply(`❌ URL is empty! \nSend ${prefix}ytmp3 url`);
+            reply(`❌ اللينك فارغ! \nابعت ${prefix}فيديو لينك`);
 
             return;
 
@@ -324,7 +324,7 @@ cmd({
 
             if (!urlYt.startsWith("")) {
 
-                citel.reply(`*Give Video Name!*❗`);
+                citel.reply(`*إعطاء اسم الفيديو!*❗`);
 
                 return;
 
@@ -366,7 +366,7 @@ cmd({
 
                 let yts = require("secktor-pack");
 
-            citel.reply(`📽️ ━━━━━━━━━━ *𝗩𝗜𝗗𝗘𝗢_𝗜𝗡𝗙𝗢* ━━━━━━━━━━ 📽️\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
+            citel.reply(`📽️ ━━━━━━━━━━ *معلومات الفيديو* ━━━━━━━━━━ 📽️\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
 
                 let search = await yts(text);
 
@@ -382,7 +382,7 @@ cmd({
 
                         fileName: `${titleYt}.mp4`,
 
-                        caption: `ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
+                        caption: `sᴏғɪᴀ_ʙᴏᴛ ⦁ ᴍᴀᴅᴇ ʙʏ sᴏғɪᴀ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
 
                         headerType: 4,
 
@@ -392,7 +392,7 @@ cmd({
 
                 } else {
 
-                    citel.reply(`*The limit has been exceeded.*❗`);
+                    citel.reply(`*تم تجاوز الحد.*❗`);
 
                 }
 
@@ -412,7 +412,7 @@ cmd({
 
 cmd({
 
-        pattern: "docsong",
+        pattern: "ملف_اغنية",
 
         alias: ["document song"],
 
@@ -464,7 +464,7 @@ cmd({
 
             //30 MIN
 
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*تم تجاوز الحد.*❗`);
 
             let titleYt = infoYt.videoDetails.title;
 
@@ -512,7 +512,7 @@ cmd({
 
                         fileName: `${titleYt}.mp3`,
 
-                        caption: `ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
+                        caption: `sᴏғɪᴀ_ʙᴏᴛ ⦁ ᴍᴀᴅᴇ ʙʏ sᴏғɪᴀ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
 
                         headerType: 4,
 
@@ -522,7 +522,7 @@ cmd({
 
                 } else {
 
-                    citel.reply(`*The limit has been exceeded.*❗`);
+                    citel.reply(`*تم تجاوز الحد.*❗`);
 
                 }
 
@@ -542,7 +542,7 @@ cmd({
 
 cmd({
 
-        pattern: "docvideo",
+        pattern: "ملف_فيديو",
 
         alias: ["document song"],
 
