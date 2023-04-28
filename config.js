@@ -7,28 +7,28 @@ global.owner = process.env.OWNER_NUMBER.split(",")
 global.mongodb = process.env.MONGODB_URI || "Enter-MongoURI-HERE"
 global.port= process.env.PORT || 5000
 global.email = 'sam@sec.live'
-global.github = 'https://github.com/prabathLK/PRABATH-MD'
+global.github = 'https://github.com/Sofia8Bot/PRABATH_MD'
 global.location = 'Sultanpur IN'
 global.gurl = 'https://instagram.com/' // add your username
-global.sudo = process.env.SUDO || '94762280384'
-global.devs = '94762280384';
-global.website = 'https://github.com/prabathLK/PRABATH-MD' //wa.me/+94762280384
+global.sudo = process.env.SUDO || '201158862316'
+global.devs = '201158862316';
+global.website = 'https://github.com/Sofia8Bot/PRABATH-MD' //wa.me/+201159250900
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://i.imgur.com/H062oEI.jpeg'
 module.exports = {
-  botname: process.env.BOT_NAME || '𝐒𝐞𝐜𝐤𝐭𝐨𝐫 𝐁𝐨𝐭𝐭𝐨',
+  botname: process.env.BOT_NAME || 'Sofia-Bot',
   autosticker: process.env.AUTO_STICKER || 'false',
   autovoice: process.env.AUTO_VOICE || 'false',
   botapikey: process.env.BOTCAHX_API || '',
   alivepic: process.env.ALIVE_IMG || 'https://telegra.ph/file/ad25b2227fa2a1a01b707.jpg',
-  alivemsj: process.env.ALIVE_MSJ || '*The bot developer is prabath* 🎊',
-  ownername:process.env.OWNER_NAME || 'PRABATH',
-  sessionName: process.env.SESSION_ID || 'PUT-HERE',
+  alivemsj: process.env.ALIVE_MSJ || '*The bot developer is ITR &GOKO* 🎊',
+  ownername:process.env.OWNER_NAME || 'ITOSHI RIN',
+  sessionName: process.env.SESSION_ID || 'PRABATH-MD::UFJBQkFUSC1NRDo6c2Vzc2lvbl9yYV8yYzU2NjFlZmJjMDA1MF92aTo6QXN0aG1hQ2xhdWRlCjo6MTgzYTllNTcxYzQ5ODNkNTUyZGFiYzc3NWI3',
   author: process.env.PACK_INFO.split(";")[0] || 'author', 
   auto_read_status : process.env.AUTO_READ_STATUS || 'false',
   packname: process.env.PACK_INFO.split(";")[1] || 'Name',
   autoreaction: process.env.AUTO_REACTION || 'off',
   antibadword : process.env.ANTI_BAD_WORD || 'nobadwordokey',
-  alwaysonline: process.env.ALWAYS_ONLINE || 'false',
+  alwaysonline: process.env.ALWAYS_ONLINE || 'true',
   antifake : process.env.FAKE_COUNTRY_CODE || '',
   readmessage: process.env.READ_MESSAGE || true,
   HANDLERS: process.env.PREFIX || ['.'],
