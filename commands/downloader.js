@@ -454,7 +454,7 @@ cmd({
 
             if (!urlYt.startsWith("")) {
 
-                citel.reply(`*Give Song Name!*❗`);
+                citel.reply(`*هات اسم الاغنية*❗`);
 
                 return;
 
@@ -496,7 +496,7 @@ cmd({
 
                 let yts = require("secktor-pack");
 
-            citel.reply(`📂 ━━━━━━━━━ *𝗗𝗢𝗖𝗨𝗠𝗘𝗡𝗧_𝗜𝗡𝗙𝗢* ━━━━━━━━━ 🎵\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
+            citel.reply(`📂 ━━━━━━━━━ *معلومات الملف* ━━━━━━━━━ 🎵\n\n\n\nℹ️ *العنوان:* ${anu.title}\n\n🕑 *المده:* ${anu.timestamp}\n\n👀 *المشاهدات:* ${anu.views}\n\n⬆️ *التحميلات:* ${anu.ago}\n\n🎗️ *المقدم:* ${anu.author.name}\n\n🗃️ *حجم الملف:* ${fileSizeInMegabytes} MB`);
 
                 let search = await yts(text);
 
@@ -572,7 +572,7 @@ cmd({
 
         if (text.length === 0) {
 
-            reply(`❌ URL is empty! \nSend ${prefix}ytmp3 url`);
+            reply(`❌ اللينك فارغ! \nاكتب ${prefix}ملف_فيديو لينك`);
 
             return;
 
@@ -584,7 +584,7 @@ cmd({
 
             if (!urlYt.startsWith("")) {
 
-                citel.reply(`*Give Video Name!*❗`);
+                citel.reply(`*هات اسم الفيديو!*❗`);
 
                 return;
 
@@ -594,7 +594,7 @@ cmd({
 
             //30 MIN
 
-            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*The limit has been exceeded.*❗`);
+            if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`*تم بلوغ الحد الاقصى.*❗`);
 
             let titleYt = infoYt.videoDetails.title;
 
@@ -626,7 +626,7 @@ cmd({
 
                 let yts = require("secktor-pack");
 
-            citel.reply(`📂 ━━━━━━━━━ *𝗗𝗢𝗖𝗨𝗠𝗘𝗡𝗧_𝗜𝗡𝗙𝗢* ━━━━━━━━━ 📽️\n\n\n\nℹ️ *Title:* ${anu.title}\n\n🕑 *Duration:* ${anu.timestamp}\n\n👀 *Viewers:* ${anu.views}\n\n⬆️ *Uploaded:* ${anu.ago}\n\n🎗️ *Author:* ${anu.author.name}\n\n🗃️ *File_Size:* ${fileSizeInMegabytes} MB`);
+            citel.reply(`📂 ━━━━━━━━━ *معلومات الملف* ━━━━━━━━━ 📽️\n\n\n\nℹ️ *العنوان:* ${anu.title}\n\n🕑 *المده:* ${anu.timestamp}\n\n👀 *المشاهدات:* ${anu.views}\n\n⬆️ *التحميلات:* ${anu.ago}\n\n🎗️ *المقدم:* ${anu.author.name}\n\n🗃️ *حجم الملف:* ${fileSizeInMegabytes} MB`);
 
                 let search = await yts(text);
 
@@ -642,7 +642,7 @@ cmd({
 
                         fileName: `${titleYt}.mp4`,
 
-                        caption: `ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
+                        caption: `sᴏғɪᴀ_ʙᴏᴛ ⦁ ᴍᴀᴅᴇ ʙʏ sᴏғɪᴀ\nʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸`,
 
                         headerType: 4,
 
@@ -652,7 +652,7 @@ cmd({
 
                 } else {
 
-                    citel.reply(`*The limit has been exceeded.*❗`);
+                    citel.reply(`*تم بلوغ الحد الاقصى.*❗`);
 
                 }
 
