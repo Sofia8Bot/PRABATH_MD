@@ -30,7 +30,7 @@ const maker = require('mumaker')
 
 cmd({ pattern: "محيط", alias: ["logo1"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/create-3d-deep-sea-metal-text-effect-online-1053.html', text)
 
@@ -42,7 +42,7 @@ cmd({ pattern: "محيط", alias: ["logo1"], category: "textpro", desc: "Some te
 
 cmd({ pattern: "رعب", alias: ["logo2"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/horror-blood-text-effect-online-883.html', text)
 
@@ -54,7 +54,7 @@ cmd({ pattern: "رعب", alias: ["logo2"], category: "textpro", desc: "Some text
 
 cmd({ pattern: "اسودوابيض", alias: ["logo3"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html', text)
 
@@ -66,7 +66,8 @@ cmd({ pattern: "اسودوابيض", alias: ["logo3"], category: "textpro", desc
 
 cmd({ pattern: "جوكر", alias: ["logo4"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
+
 
         let anu = await maker.textpro('https://textpro.me/create-logo-joker-online-934.html', text)
 
@@ -78,7 +79,7 @@ cmd({ pattern: "جوكر", alias: ["logo4"], category: "textpro", desc: "Some te
 
 cmd({ pattern: "ميتاليك", alias: ["logo5"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/create-a-metallic-text-effect-free-online-1041.html', text)
 
@@ -90,7 +91,7 @@ cmd({ pattern: "ميتاليك", alias: ["logo5"], category: "textpro", desc: "S
 
 cmd({ pattern: "فولاذ", alias: ["logo6"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/steel-text-effect-online-921.html', text)
 
@@ -102,7 +103,7 @@ cmd({ pattern: "فولاذ", alias: ["logo6"], category: "textpro", desc: "Some 
 
 cmd({ pattern: "هاريبوتر", alias: ["logo7"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو_')
 
         let anu = await maker.textpro('https://textpro.me/create-harry-potter-text-effect-online-1025.html', text)
 
@@ -114,7 +115,7 @@ cmd({ pattern: "هاريبوتر", alias: ["logo7"], category: "textpro", desc: 
 
 cmd({ pattern: "مياه", alias: ["logo8"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو_')
 
         let anu = await maker.textpro('https://textpro.me/3d-underwater-text-effect-generator-online-1013.html', text)
 
@@ -126,7 +127,7 @@ cmd({ pattern: "مياه", alias: ["logo8"], category: "textpro", desc: "Some te
 
 cmd({ pattern: "ترف", alias: ["logo9"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/3d-luxury-gold-text-effect-online-1003.html', text)
 
@@ -138,7 +139,7 @@ cmd({ pattern: "ترف", alias: ["logo9"], category: "textpro", desc: "Some text
 
 cmd({ pattern: "جلو", alias: ["logo10"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html', text)
 
@@ -150,7 +151,7 @@ cmd({ pattern: "جلو", alias: ["logo10"], category: "textpro", desc: "Some tex
 
 cmd({ pattern: "فابريك", alias: ["logo11"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/fabric-text-effect-online-964.html', text)
 
@@ -162,7 +163,7 @@ cmd({ pattern: "فابريك", alias: ["logo11"], category: "textpro", desc: "So
 
 cmd({ pattern: "توكسيك", alias: ["logo12"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/toxic-text-effect-online-901.html', text)
 
@@ -174,7 +175,7 @@ cmd({ pattern: "توكسيك", alias: ["logo12"], category: "textpro", desc: "So
 
 cmd({ pattern: "قديم", alias: ["logo13"], category: "textpro", desc: "Some text to image feature with various styles." }, async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/3d-golden-ancient-text-effect-online-free-1060.html', text)
 
@@ -198,7 +199,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/create-a-cloud-text-effect-on-the-sky-online-1004.html', text)
 
@@ -238,7 +239,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_اكتب حاجه عشان اعملهالك لوجو._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/create-a-transformer-text-effect-online-1035.html', text)
 
@@ -266,7 +267,7 @@ cmd({
 
 cmd({
 
-            pattern: "thunder",
+            pattern: "برق",
 
             alias: ["logo16"],
 
@@ -278,7 +279,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/online-thunder-text-effect-generator-1031.html', text)
 
@@ -306,7 +307,7 @@ cmd({
 
 cmd({
 
-            pattern: "scifi",
+            pattern: "الخيال",
 
             alias: ["logo17"],
 
@@ -318,7 +319,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/create-3d-sci-fi-text-effect-online-1050.html', text)
 
@@ -346,7 +347,7 @@ cmd({
 
 cmd({
 
-            pattern: "sand",
+            pattern: "رمل",
 
             alias: ["logo18"],
 
@@ -358,7 +359,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/write-in-sand-summer-beach-free-online-991.html', text)
 
@@ -386,7 +387,7 @@ cmd({
 
 cmd({
 
-            pattern: "rainbow",
+            pattern: "رينبو",
 
             alias: ["logo19"],
 
@@ -398,7 +399,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/3d-rainbow-color-calligraphy-text-effect-1049.html', text)
 
@@ -426,7 +427,7 @@ cmd({
 
 cmd({
 
-            pattern: "pencil",
+            pattern: "رصاص",
 
             alias: ["logo20"],
 
@@ -438,7 +439,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/create-a-sketch-text-effect-online-1044.html', text)
 
@@ -466,7 +467,7 @@ cmd({
 
 cmd({
 
-            pattern: "neon",
+            pattern: "نيون",
 
             alias: ["logo21"],
 
@@ -478,7 +479,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/create-3d-neon-light-text-effect-online-1028.html', text)
 
@@ -506,7 +507,7 @@ cmd({
 
 cmd({
 
-            pattern: "magma",
+            pattern: "ماجما",
 
             alias: ["logo22"],
 
@@ -518,7 +519,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/create-a-magma-hot-text-effect-online-1030.html', text)
 
@@ -546,7 +547,7 @@ cmd({
 
 cmd({
 
-            pattern: "leaves",
+            pattern: "اوراق",
 
             alias: ["logo23"],
 
@@ -558,7 +559,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/natural-leaves-text-effect-931.html', text)
 
@@ -586,7 +587,7 @@ cmd({
 
 cmd({
 
-            pattern: "glitch",
+            pattern: "جلتش",
 
             alias: ["logo24"],
 
@@ -598,7 +599,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/create-impressive-glitch-text-effects-online-1027.html', text)
 
@@ -626,7 +627,7 @@ cmd({
 
 cmd({
 
-            pattern: "discovery",
+            pattern: "ديسكفري",
 
             alias: ["logo25"],
 
@@ -638,7 +639,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/create-space-text-effects-online-free-1042.html', text)
 
@@ -666,7 +667,7 @@ cmd({
 
 cmd({
 
-            pattern: "christmas",
+            pattern: "كريسماس",
 
             alias: ["logo26"],
 
@@ -678,7 +679,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/christmas-tree-text-effect-online-free-1057.html', text)
 
@@ -706,7 +707,7 @@ cmd({
 
 cmd({
 
-            pattern: "candy",
+            pattern: "حلوى",
 
             alias: ["logo27"],
 
@@ -718,7 +719,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/create-christmas-candy-cane-text-effect-1056.html', text)
 
@@ -758,7 +759,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/1917-style-text-effect-online-980.html', text)
 
@@ -786,7 +787,7 @@ cmd({
 
 cmd({
 
-            pattern: "newtext",
+            pattern: "نص_جديد",
 
             alias: ["logo30"],
 
@@ -798,7 +799,7 @@ cmd({
 
         async(Void, citel, text) => {
 
-            if (!text) return citel.reply('_Need text._')
+            if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
             let anu = await maker.textpro('https://textpro.me/create-a-metallic-text-effect-free-online-1041.html', text)
 
@@ -826,7 +827,7 @@ cmd({
 
 cmd({
 
-        pattern: "blackpink",
+        pattern: "بلاك_بينك",
 
         alias: ["logo29"],
 
@@ -838,7 +839,7 @@ cmd({
 
     async(Void, citel, text) => {
 
-        if (!text) return citel.reply('_Need text._')
+        if (!text) return citel.reply('_تعذر فهم طلبك يمكنك كتابة الشئ المراد تحويله إلى لوجو !_')
 
         let anu = await maker.textpro('https://textpro.me/create-blackpink-logo-style-online-1001.html', text)
 
