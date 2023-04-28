@@ -17,9 +17,9 @@ const fetch = require('node-fetch')
 
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "movie",
+            pattern: "فيلم",
             category: "search",
-            desc: "Sends image of asked Movie/Series.",
+            desc: "ارسل صوره الفيلم/المسلسل المطلوب.",
             use: '<text>',
             filename: __filename,
         },
@@ -132,9 +132,9 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "google",
+            pattern: "جوجل",
             category: "search",
-            desc: "Sends info of given query from Google Search.",
+            desc: "ارسل المعلومات التي تريد الاستعلام عنها في بحث جوجل.",
             use: '<text>',
             filename: __filename,
         },
@@ -155,10 +155,10 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "img",
+            pattern: "صورة",
             alias: ["image"],
             category: "search",
-            desc: "Searches Image on Google",
+            desc: "عمليات البحث عن الصورة قي جوجل",
             use: '<text>',
             filename: __filename,
         },
