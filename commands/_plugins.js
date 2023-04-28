@@ -13,7 +13,7 @@ const fs = require('fs-extra')
 const { plugins,plugindb, remove, isUrl,cmd } = require('../lib')
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "plugins",
+        pattern: "الاضفات",
         category: "owner",
         react: "➕",
         desc: "Shows list of all externally installed modules",
@@ -22,7 +22,7 @@ cmd({
     async(Void, citel, text, { isCreator }) => {
         const { tlang } = require('../lib')
         if (!isCreator) return citel.reply(tlang().owner)
-        let allmodtext = `*All Installed Modules are:-*\n\n`
+        let allmodtext = `*جميع الوحدات المثبتة هي:-*\n\n`
         allmodtext += await plugins()
         citel.reply(allmodtext)
 
@@ -31,7 +31,7 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "remove",
+        pattern: "ازالة",
         category: "owner",
         desc: "removes external modules.",
         filename: __filename
@@ -40,7 +40,7 @@ cmd({
         if (!isCreator) return citel.reply(tlang().owner)
         if(text==='all') {
          await plugindb.collection.drop()
-         return citel.reply('Deleted all plugins from Secktor.')
+         return citel.reply('حذف جميع المكونات الإضافية من Secktor.')
         }
         let kill = await remove(text.split(" ")[0])
         delete require.cache[require.resolve(__dirname+"/" + text + ".js")];
@@ -51,7 +51,7 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "install",
+        pattern: "تثبيت",
         category: "owner",
         react: "🆕",
         desc: "Installs external modules..",
