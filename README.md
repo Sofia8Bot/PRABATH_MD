@@ -1,7 +1,7 @@
   <p align="center">  
   <a href="https://telegra.ph/file/2fe333ae3b8e135f4e500.jpg">
     <img alt="secktor docs" height="300" src="https://telegra.ph/file/2fe333ae3b8e135f4e500.jpg">
-    <h1 align="center"> PRABATH-MD </h1>
+    <h1 align="center"> Sofia-Bot </h1>
   </a>
 </p>  
 <p align="center">
