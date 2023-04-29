@@ -14,7 +14,7 @@ const axios = require('axios')
 const { cmd } = require('../lib')
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "question",
+            pattern: "سؤال",
             desc: "Random Question.",
             category: "fun",
             filename: __filename,
@@ -25,7 +25,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "truth",
+            pattern: "صراحه",
             desc: "truth and dare(truth game.).",
             category: "fun",
             filename: __filename,
@@ -36,7 +36,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "dare",
+            pattern: "تحدي",
             desc: "truth and dare(dare game.).",
             category: "fun",
             filename: __filename,
@@ -47,20 +47,20 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "fact",
+        pattern: "حقيقه",
         desc: "Sends fact in chat.",
         category: "fun",
         filename: __filename,
     },
     async(Void, citel, text) => {
         const { data } = await axios.get(`https://nekos.life/api/v2/fact`)
-        return citel.reply(`*Fact:* ${data.fact}\n\n*Powered by Secktor*`)   
+        return citel.reply(`*Fact:* ${data.fact}\n\n*Powered by Sofia_bot*`)   
     }
 
 )
     //---------------------------------------------------------------------------
     cmd({
-        pattern: "quotes",
+        pattern: "اقتباسات",
         desc: "Sends quotes in chat.",
         category: "fun",
         filename: __filename,
@@ -69,8 +69,8 @@ cmd({
         var quoo = await axios.get(`https://favqs.com/api/qotd`)
         const replyf = `
 ╔════◇
-║ *🎗️Content:* ${quoo.data.quote.body}
-║ *👤Author:* ${quoo.data.quote.author}
+║ *🎗️المقوله:* ${quoo.data.quote.body}
+║ *👤القائل:* ${quoo.data.quote.author}
 ║    
 ╚════════════╝ `
 return citel.reply(replyf)
@@ -79,7 +79,7 @@ return citel.reply(replyf)
 )
     //---------------------------------------------------------------------------
     cmd({
-        pattern: "define",
+        pattern: "تعريف",
         desc: "urban dictionary.",
         category: "fun",
         filename: __filename,
@@ -88,12 +88,12 @@ return citel.reply(replyf)
         try{
             let { data } = await axios.get(`http://api.urbandictionary.com/v0/define?term=${text}`)
             var textt = `
-            Word: ${text}
-            Definition: ${data.list[0].definition.replace(/\[/g, "").replace(/\]/g, "")}
-            Example: ${data.list[0].example.replace(/\[/g, "").replace(/\]/g, "")}`
+            الكلمه: ${text}
+            التعريف: ${data.list[0].definition.replace(/\[/g, "").replace(/\]/g, "")}
+            مثال: ${data.list[0].example.replace(/\[/g, "").replace(/\]/g, "")}`
             return citel.reply(textt)
                     } catch {
-                        return citel.reply(`No result for ${text}`)
+                        return citel.reply(`لا توجد نتيجة ل ${text}`)
                     }
     }
 )
