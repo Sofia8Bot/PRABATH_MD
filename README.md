@@ -1,6 +1,6 @@
   <p align="center">  
-  <a href="https://i.ibb.co/7YGn5qS/20230305-135924.jpg">
-    <img alt="secktor docs" height="300" src="https://i.ibb.co/7YGn5qS/20230305-135924.jpg">
+  <a href="https://telegra.ph/file/2fe333ae3b8e135f4e500.jpg">
+    <img alt="secktor docs" height="300" src="https://telegra.ph/file/2fe333ae3b8e135f4e500.jpg">
     <h1 align="center"> PRABATH-MD </h1>
   </a>
 </p>  
