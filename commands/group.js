@@ -359,12 +359,12 @@ cmd({
             const profile = `
 *Hii ${citel.pushName},*
 *Here is your profile information*
-*👤Username:* ${citel.pushName}
-*⚡Bio:* ${bioo}
-*🧩Role:* ${role}
-*🍁Level:* ${userq.level}
-*📥 Total Messages* ${ttms}
-*Powered by ${tlang().title}*
+*👤اسم المستخدم:* ${citel.pushName}
+*⚡البايو:* ${bioo}
+*🧩التصنيف:* ${role}
+*🍁اللفل:* ${userq.level}
+*📥 عدد الرسائل* ${ttms}
+*بواسطة ${tlang().title}*
 `;
             const buttonsd = [{
                     buttonId: `${prefix}رانك`,
@@ -707,7 +707,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "hidetag",
+            pattern: "مخفي",
             alias: ["htg"],
             desc: "Tags everyperson of group without mentioning their numbers",
             category: "group",
@@ -734,7 +734,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "add",
+            pattern: "اضافة",
             desc: "Add that person in group",
             fromMe: true,
             category: "group",
@@ -786,7 +786,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "demote",
+        pattern: "خفض",
         desc: "Demotes replied/quoted user from group",
         category: "group",
         filename: __filename,
@@ -814,8 +814,8 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "del",
-            alias: [",","ඩිලිට්"],
+            pattern: "حذف",
+            alias: [",","دلت"],
             desc: "Deletes message of any user",
             category: "group",
             react: "⛔",
@@ -839,9 +839,9 @@ cmd({
                 const botNumber = await Void.decodeJid(Void.user.id)
                 const isBotAdmins = citel.isGroup ? groupAdmins.includes(botNumber) : false;
                 const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
-                if (!isAdmins) return citel.reply('Only Admins are allowed to delete other persons message.')
-                if (!isBotAdmins) return citel.reply('I can\'t delete anyones message without getting Admin Role.')
-                if (!citel.quoted) return citel.reply(`Please reply to any message. ${tlang().greet}`);
+                if (!isAdmins) return citel.reply('يسمح بحذف رسالة أشخاص آخرين فقط للمشرفين.')
+                if (!isBotAdmins) return citel.reply('هات اشراف الاول.')
+                if (!citel.quoted) return citel.reply(`رد على الرساله اللي عايزها تتحذف. ${tlang().greet}`);
                 let { chat, fromMe, id } = citel.quoted;
                 const key = {
                     remoteJid: citel.chat,
@@ -855,24 +855,24 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "checkwarn",
+            pattern: "تفقد التحذيرات",
             desc: "Check warns",
             category: "group",
             filename: __filename,
             use: '<quoted/reply user.>',
         },
         async(Void, citel, text) => {
-            if (!citel.isGroup) return citel.reply('This command is only for Group.')
-            if (!citel.quoted) return citel.reply('Quote a user master.')
-            teskd = `*All Warnings.*\n\n`
+            if (!citel.isGroup) return citel.reply('هذا الامر فقط في الجروبات.')
+            if (!citel.quoted) return citel.reply('اقتباس مستخدم رئيسي.')
+            teskd = `*جميع التحذيرات.*\n\n`
             let h = await warndb.find({ id: citel.quoted.sender.split('@')[0] + 'warn' })
             console.log(h)
             teskd += `*There are total ${h.length}  warnings.*\n`
             for (let i = 0; i < h.length; i++) {
                 teskd += `*${i+1}*\n╭─────────────◆\n│ *🍁In Group:-* ${h[i].group}\n`
-                teskd += `│ *🔰Time:-* ${h[i].date}\n`
-                teskd += `│ *⚠️Warned by:-* ${h[i].warnedby}\n`
-                teskd += `│ _📍Reason: ${h[i].reason}_\n╰─────────────◆\n\n`
+                teskd += `│ *🔰الوقت:-* ${h[i].date}\n`
+                teskd += `│ *⚠️بواسطة:-* ${h[i].warnedby}\n`
+                teskd += `│ _📍السبب: ${h[i].reason}_\n╰─────────────◆\n\n`
             }
             citel.reply(teskd)
         }
@@ -880,8 +880,8 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "block",
-            alias: ["බ්ලොක්","ලොක්"],
+            pattern: "بلوك",
+            alias: ["بلك","block"],
             desc: "blocks that person",
             fromMe: true,
             category: "owner",
@@ -889,7 +889,7 @@ cmd({
             use: '<quote/reply user.>',
         },
         async(Void, citel, text) => {
-            if (!citel.quoted) return citel.reply("Please reply to user");
+            if (!citel.quoted) return citel.reply("ارجو الرد على المستخدم");
             if (!isCreator) citel.reply(tlang().owner);
             let users = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted ? citel.quoted.sender : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
             await Void.updateBlockStatus(users, "block")
@@ -900,7 +900,7 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "broadcast",
+        pattern: "بث",
         alias: ["bc"],
         desc: "Bot makes a broadcast in all groups",
         fromMe: true,
@@ -915,12 +915,12 @@ cmd({
             .slice(0)
             .map((entry) => entry[1]);
         let anu = groups.map((v) => v.id);
-        citel.reply(`Send Broadcast To ${anu.length} Group Chat, Finish Time ${
+        citel.reply(`إرسال البث إلى ${anu.length} دردشة الجروب, وقت الانتهاء ${
           anu.length * 1.5
-        } second`);
+        } ثانيه`);
         for (let i of anu) {
             await sleep(1500);
-            let txt = `*--❗${tlang().title} Broadcast❗--*\n\n *🍀Author:* ${citel.pushName}\n\n${text}`;
+            let txt = `*--❗${tlang().title} البث❗--*\n\n *🍀المقدم:* ${citel.pushName}\n\n${text}`;
             let buttonMessaged = {
                 image: log0,
                 caption: txt,
@@ -944,7 +944,7 @@ cmd({
                 quoted: citel,
             });
         }
-        citel.reply(`*Successful Sending Broadcast To ${anu.length} Group(s)*`);
+        citel.reply(`*تم ارسال البث بنجاح الى ${anu.length} جروب*`);
     }
 )
 
