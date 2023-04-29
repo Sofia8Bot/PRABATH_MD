@@ -258,70 +258,70 @@ cmd({
 
 📟 *Command:-* .ملصق
 ℹ️ *Description:-* صورة الى نلصق
-🔥 *Help:-* .منشن الصورة او الفيديو المراد تحويلة الى ملصق
+🔥 *Help:-* .ملصق منشن صورة او فيديو 
 
 
 📟 *Command:-* .رقي
 ℹ️ *Description:-* رقي الى مشرف
-🔥 *Help:-*نشن الشخص المراد ترفيته
+🔥 *Help:-*رقي منشن اي عضو
 
 📟 *Command:-* .خفض
 ℹ️ *Description:-* خفض مشرف الى عضو
 🔥 *Help:-* .خفض مشرف الى عضو
 
 
-📟 *Command:-* .ban
-ℹ️ *Description:-* Cmd Block Use 
-🔥 *Help:-* .احظر الرقم 
+📟 *Command:-* .حظر
+ℹ️ *Description:-* أستخدام الامر للحظر 
+🔥 *Help:-* . احظر منشن اي عضو 
 
-📟 *Command:-* .unban
-ℹ️ *Description:-* Loked User Unblock
-🔥 *Help:-* .unban Tag Any User
-
-
-📟 *Command:-* .kick
-ℹ️ *Description:-* Remove Participants On Group
-🔥 *Help:-* .kick Tag Any User
+📟 *Command:-* .الغاء حظر
+ℹ️ *Description:-* الغاء حظر المستخدم
+🔥 *Help:-* .الغاء الحظر منشن اي عضو
 
 
-📟 *Command:-* .add
-ℹ️ *Description:-* Add Participants On Group
-🔥 *Help:-* .add Mobile number
+📟 *Command:-* .طرد
+ℹ️ *Description:-* حذف عضو من الجروب
+🔥 *Help:-* .طرد منشن اي عضو
 
 
-📟 *Command:-* .poll
-ℹ️ *Description:-* Create poll For Group
-🔥 *Help:-* .poll question option1 option2 option3
+📟 *Command:-* .ضيف
+ℹ️ *Description:-*ضيف اعضاء للجروب
+🔥 *Help:-* .ضيف رقم الموبايل 
 
 
-📟 *Command:-* .profile
-ℹ️ *Description:-* Profile Imfomation Get
-🔥 *Help:-* .profile Tag Any user
+📟 *Command:-* .تصويت
+ℹ️ *Description:-* انشاء تصويت بالجروب
+🔥 *Help:-* .سؤال استطلاع خيار واحد او اتنين او ثلاثه
 
 
-📟 *Command:-* .group
-ℹ️ *Description:-* Group Mute or Unmute
-🔥 *Help:-* .group
+📟 *Command:-* .البروفايل
+ℹ️ *Description:-* احصل على معلومات البروفايل
+🔥 *Help:-* .بروفايل منشن اي عضو
+
+
+📟 *Command:-* .الجروب
+ℹ️ *Description:-* كتم الجروب او فتح الجروب
+🔥 *Help:-* .جروب
 
 
 📟 *Command:-* .gdp
-ℹ️ *Description:-* Group Profile Photo Change
-🔥 *Help:-* .gdp Tag Any photo
+ℹ️ *Description:-* غير صورة الجروب
+🔥 *Help:-* .gdp منشن اي صورة
 
 
-📟 *Command:-* .del
-ℹ️ *Description:-* Delete message
-🔥 *Help:-* .del tag message
+📟 *Command:-* .احذف
+ℹ️ *Description:-* حذف رسالة
+🔥 *Help:-* .حذف منشن اي رسالة
 
 
-📟 *Command:-* .antilink
-ℹ️ *Description:-* Link Remover
-🔥 *Help:-* .antilink Active or Deactive
+📟 *Command:-* .مضاد الروابط
+ℹ️ *Description:-* حاذف الروابط
+🔥 *Help:-* .مضاد الوابط مفعل او غير مفعل
 
 
-📟 *Command:-* .tag
-ℹ️ *Description:-* Tag All Group Users
-🔥 *Help:-* .tag
+📟 *Command:-* .منشن
+ℹ️ *Description:-* منشن اعضاء الجروب
+🔥 *Help:-* .منشن
 
 
 📟 *Command:-* .getjids
@@ -329,29 +329,29 @@ cmd({
 🔥 *Help:-* .getjids
 
 
-📟 *Command:-* .rank
-ℹ️ *Description:-* Check Rank
-🔥 *Help:-* .rank Tag Any User
+📟 *Command:-* .المستوى
+ℹ️ *Description:-* تحقق المستوى
+🔥 *Help:-* .المستوى منشن اي عضو
 
 
-📟 *Command:-* .setwelcome
-ℹ️ *Description:-* Welcome message Change
-🔥 *Help:-* .setwelcome Your welcome Message
+📟 *Command:-* .الترحيب
+ℹ️ *Description:-* تغير رسالة الترحيب
+🔥 *Help:-* .رسالة الترحيب
 
 
-📟 *Command:-* .setgoodbye
-ℹ️ *Description:-* goodbye message change 
-🔥 *Help:-* .setgoodbye Your Goodbye Message
+📟 *Command:-* .الوداع
+ℹ️ *Description:-* تغير رسالة الوداع 
+🔥 *Help:-* .رسالة الوداع
 
 
 📟 *Command:-* .gs
-ℹ️ *Description:-* Group settings change
+ℹ️ *Description:-* تغير اعدادات الجروب
 🔥 *Help:-* .gs
 
 
-📟 *Command:-* .settings
-ℹ️ *Description:-* change group settings
-🔥 *Help:-* .settings
+📟 *Command:-* .اعدادات
+ℹ️ *Description:-* تغيير اعدادات الجروب
+🔥 *Help:-* .اعدادات
 
 
 ⦿. *REQUEST BY:* ${citel.pushName}
@@ -428,7 +428,7 @@ cmd({
 │.mp4تحميل
 │.fbs
 └─────────◉
-┌─(🔍 اةامر البحث)
+┌─(🔍 اوامر البحث)
 │.ابحث عن فيديو
 │.ابحث عن اغنية
 │.بحث يوتيوب
@@ -441,18 +441,18 @@ cmd({
 │.ttp
 │.لوجو
 │.ss
-│.trt
+│.ترجم
 └─────────◉
-┌─(👥 اوامر الجروب
+┌─(👥 اوامر الجروب)
 │.اطرد
 │.رقي
 │.خفض
 │.مخفي
 │.الترحيب
 │.الوداع
-│.gs
+│.اعدادات الجروب
 │.حظر
-│.فك الحظر
+│.الغاء الحظر
 │.الانترنت
 │.حذف
 │.gdp
@@ -460,7 +460,7 @@ cmd({
 ┌─(🧑‍💻 اةوامر المشرفين)
 │.ujid
 │.حظر
-│.فك الحظر
+│.الغاء الحظر
 │.اعادة تشغيل
 │.انضم
 │.احفظ
@@ -474,7 +474,7 @@ cmd({
 ┌─(💬 اوامر اخرى)
 │.اونلاين
 │.المستوى
-│الملف الشخضي
+│البروفايل
 │.نظام
 │.eval
 │.كود
@@ -535,27 +535,27 @@ cmd({
                 caption: `
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━
-┃  *GROUP SETTINGS CHANGE*
+┃  *تغيير اعدادات الجروب*
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
 
-🔇 *MUTE GROUP -* .group close
-🔊 *UNMUTE GROUP -* .group open
+🔇 *MUTE GROUP -* .اغلق الجروب
+🔊 *UNMUTE GROUP -* .افتح الجروب
 
 
-✅ *ACTIVE ANTILINK -* .act antilink
-❌ *DEACTIVE ANTILINK -* .deact antilink
+✅ *ACTIVE ANTILINK -* .تشغيل مضاد الروابط
+❌ *DEACTIVE ANTILINK -* .ايقاف مضاد الروابط
 
 
-✅ *ACTIVE BOT THIS GROUP -* .bot on
-❌ *DEACTIVE BOT THIS GROUP -* .bot off
+✅ *ACTIVE BOT THIS GROUP -* .تشغيل البوت
+❌ *DEACTIVE BOT THIS GROUP -* .ايقاف البوت
 
 
 ✅ *ACTIVE ADD AND LEFT MSJ -* .act events
 ❌ *DEACTIVE ADD AND LEFT MSJ -* .deact events
 
-ᴘʀᴀʙᴀᴛʜ-ᴍᴅ ⦁ ᴍᴀᴅᴇ ʙʏ ᴘʀᴀʙᴀᴛʜ
+Sofia-Bot ⦁ ᴍᴀᴅᴇ ʙʏ ITR
 ʀᴇʟᴇᴀsᴇᴅ ⦁ 𝟸𝟶𝟸𝟹/𝟶𝟷/𝟶𝟸
 `,
 
@@ -636,44 +636,44 @@ cmd({
 
                 caption: `
 
-📟 *Command:-* .install
-ℹ️ *Description:-* Install Plugins
-🔥 *Help:-* .install Plugin Url 
+📟 *Command:-* .تثبيت
+ℹ️ *Description:-* تثبيت الاضافات
+🔥 *Help:-* .تثبيت رابط الاضافات 
 
 
-📟 *Command:-* .plugins
-ℹ️ *Description:-* Install Plugins View 
-🔥 *Help:-* .plugins 
+📟 *Command:-* .الاضافات
+ℹ️ *Description:-* تثبيت عرض الاضافات 
+🔥 *Help:-* .الاضافات 
 
 
-📟 *Command:-* .block
-ℹ️ *Description:-* Block User 
-🔥 *Help:-* .block Tag user or PM Chat
+📟 *Command:-* .حظر
+ℹ️ *Description:-* حظر مستخدم 
+🔥 *Help:-* .حظر منشن المستخدم او المحادثة
 
 
-📟 *Command:-* .unblock
-ℹ️ *Description:-* Unblock User
-🔥 *Help:-* .unblock Tag user or PM Chat
+📟 *Command:-* .الغاء الحظر
+ℹ️ *Description:-* الغاء حظر مستخدم
+🔥 *Help:-* .الغاء حظر منشن المستخدم او المحادثة
 
 
-📟 *Command:-* .remove
-ℹ️ *Description:-* Remove Plugins 
-🔥 *Help:-* .remove plugin url
+📟 *Command:-* .ازاله
+ℹ️ *Description:-* اازالة الاضافات 
+🔥 *Help:-* .ازالة رابط الاضافات
 
 
-📟 *Command:-* .join
-ℹ️ *Description:-* Join Group Using Whatsapp group url 
-🔥 *Help:-* .join whatsapp group url
+📟 *Command:-* .انضم
+ℹ️ *Description:-* انضم للجروب باستخدام رابط المجموعة
+🔥 *Help:-* .انضم للجروب باستخدام رابط المجموعة
 
 
-*📟Command:-* .restart
-ℹ️ *Description:-* Restart Bot 
-🔥 *Help:-* .restart
+*📟Command:-* .اعادة تشغيل
+ℹ️ *Description:-* اعادة تشغيل البوت 
+🔥 *Help:-* .اعادة تشغيل
 
 
-📟 *Command:-* .save
+📟 *Command:-* .احفظ
 ℹ️ *Description:-* Save notes from mongodb 
-🔥 *Help:-* .save prabath-md
+🔥 *Help:-* .save Sofia-Bot
 
 
 📟 *Command:-* .get
@@ -885,12 +885,12 @@ cmd({
 
 📟 *Command:-* .ترجم
 ℹ️ *Description:-* ترجمة اي لغة
-🔥 *Help:-* .منشن الجملة المراد ترجمتها
+🔥 *Help:-* . ترجم منشن نص
 
 
 📟 *Command:-* .ملصق
 ℹ️ *Description:-* صورة او فيديو الى ملصق 
-🔥 *Help:-* .منشن الصورة المراد تحويلها الى ملصق
+🔥 *Help:-* .ملصق منشن صورة او فيديو
 
 ⦿. *REQUEST BY:* ${citel.pushName}
 
@@ -920,7 +920,7 @@ cmd({
 
 cmd({
 
-            pattern: "gitamin",
+            pattern: "gitadmin",
 
             desc: "(menu cmdlist).",
 
