@@ -55,7 +55,7 @@ cmd({
     },
     async(Void, citel) => {
         let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
-        let cap = `*🌐 𝗣𝗥𝗔𝗕𝗔𝗧𝗛-𝗠𝗗 _𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟 ♦️*
+        let cap = `*🌐 Sofia _Bot ♦️*
 
 ●. *Support group :* https://chat.whatsapp.com/KwFkWjI8qJ6B174esar8IM
 
@@ -82,7 +82,7 @@ cmd({
 
 cmd({
 
-            pattern: "لوجو",
+            pattern: "logo",
 
             desc: "(menu cmdlist).",
 
