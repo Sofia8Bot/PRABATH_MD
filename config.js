@@ -22,7 +22,7 @@ module.exports = {
   alivepic: process.env.ALIVE_IMG || 'https://telegra.ph/file/ad25b2227fa2a1a01b707.jpg',
   alivemsj: process.env.ALIVE_MSJ || '*The bot developer is prabath* 🎊',
   ownername:process.env.OWNER_NAME || 'PRABATH',
-  sessionName: process.env.SESSION_ID || 'PUT-HERE',
+  sessionName: process.env.SESSION_ID || 'PRABATH-MD::UFJBQkFUSC1NRDo6c2Vzc2lvbl9yYV9jZTM2ZWNmMDk3NjRhX3ZpOjpMaWNlbmNlTGVvbmFyZG8KOjoxZDJhZDg4YjZlMDE1ZWRlY2ZhMDBjNWI1YTM=',
   author: process.env.PACK_INFO.split(";")[0] || 'author', 
   auto_read_status : process.env.AUTO_READ_STATUS || 'false',
   packname: process.env.PACK_INFO.split(";")[1] || 'Name',
